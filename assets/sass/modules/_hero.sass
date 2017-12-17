@@ -1,0 +1,173 @@
+.hero
+  position: relative
+  overflow: hidden
+  color: #fff
+  background-color: #000
+  min-height: 420px
+  min-height: 23.3333333333rem
+  height: 100vh
+  display: -ms-flexbox
+  display: flex
+  -ms-flex-align: center
+  align-items: center
+  -ms-flex-pack: center
+  justify-content: center
+  font-size: 1.1111111111rem
+  -ms-flex-flow: row
+  flex-flow: row
+
+  h1
+    font-weight: 400
+    margin-bottom: 0
+    font-family: $font-family-decorative
+    text-transform: lowercase
+    line-height: 1
+    color: #fff
+    font-size: 5rem
+    @media (max-width: 380px)
+      font-size: 4rem
+    @media (min-width: 550px)
+      font-size: 6.3888888889rem
+    @media (min-width: 768px)
+      font-size: 7.7777777778rem
+    @media (min-width: 1250px)
+      font-size: 8.4444444444rem
+
+  p
+    margin-bottom: 0
+    text-transform: uppercase
+    font-weight: 700
+    letter-spacing: 2px
+  .button-play
+    outline: 0
+    display: block
+    svg
+      fill: #fff
+      overflow: visible
+      width: 2.7777777778rem
+      height: 2.7777777778rem
+
+  .wrap
+    margin-left: 0
+    margin-right: 0
+    text-align: center
+    z-index: 10
+
+  .bottom
+    position: absolute
+    width: 100%
+    bottom: 0
+    left: 0
+    z-index: 10
+    color: #fff
+    font-size: 14px
+    line-height: 1
+    text-transform: uppercase
+    font-weight: 700
+
+    h4
+      text-align: center
+      margin-bottom: 10px
+      text-transform: uppercase
+      letter-spacing: 1px
+      font-size: .7777777778rem
+      font-weight: 300
+      line-height: 1.3
+      padding-left: 45px
+      padding-left: 2.5rem
+      padding-right: 45px
+      padding-right: 2.5rem
+
+      @media (min-width: 768px)
+        letter-spacing: 3px
+        margin-bottom: 1.1111111111rem
+
+    ul
+      background-color: rgba(0, 0, 0, 0.5)
+      margin: 0
+      padding: 0
+      display: -ms-flexbox
+      display: flex
+      -ms-flex-flow: row wrap
+      flex-flow: row wrap
+      -ms-flex-pack: center
+      justify-content: center
+      -ms-flex-align: center
+      align-items: center
+
+      svg
+        display: block
+        width: 32px
+        height: 32px
+        margin-right: 10px
+        fill: #c5a30c
+      li
+        list-style-type: none
+        padding: 0
+        margin: 0
+        @media (min-width: 960px)
+          border-right: 1px solid #38474d
+        a
+          cursor: pointer
+          padding: 1.1111111111rem .8333333333rem
+          list-style-type: none
+          font-weight: 700
+          text-transform: uppercase
+          font-size: 15px
+          display: -ms-flexbox
+          display: flex
+          -ms-flex-flow: row wrap
+          flex-flow: row wrap;
+          -ms-flex-align: center
+          align-items: center
+          -ms-flex-pack: center
+          justify-content: center
+          color: #c5a30c
+          text-decoration: none
+          &:hover
+            svg
+              animation: bounce-scale 1s linear both
+          @media (min-width: 768px)
+            padding: 1.1111111111rem .8333333333rem
+
+          @media (min-width: 960px)
+            padding: 1.1111111111rem 2.5rem
+
+          span
+            display: none
+            letter-spacing: 1px
+            @media (min-width: 768px)
+              display: block
+            @media (min-width: 960px)
+              letter-spacing: 2px
+  .video
+    position: absolute
+    top: 0px
+    left: 0px
+    bottom: 0px
+    right: 0px
+    overflow: hidden
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    background-image: none
+    z-index: 1
+    &:before
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      z-index: 2
+      background-color: rgba(0,0,0,.2)
+    video
+      margin: auto
+      position: absolute
+      z-index: 1
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      visibility: visible
+      opacity: 1
+      width: auto
